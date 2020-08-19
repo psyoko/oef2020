@@ -5,3 +5,76 @@ Description: Custom theme for Over Easy Foundation, using Tania Raschia’s tut
 Version: 0.0.1
 Tags: custom
 */
+
+.block-title,
+.block-subtitle,
+.block-nav,
+.block-main,
+.block-aside,
+.block-footer {
+    border: 3px solid #d8d8d8;
+    padding: 30px;
+}
+
+.block-title { 
+    grid-area: block-title;
+}
+
+.block-subtitle { 
+    grid-area: block-subtitle;
+}
+
+.block-nav { 
+    grid-area: block-nav;
+}
+
+.block-main { 
+    grid-area: block-main;
+}
+
+.block-aside { 
+    grid-area: block-aside;
+}
+
+.block-footer { 
+    grid-area: block-footer;
+}
+
+.page-wrapper {
+    margin: 30px; 
+    border: 3px solid #d8d8d8;
+}
+
+@media all and (min-width: 900px) {
+    body {
+        background-color: #e8e8e8;
+    }
+    
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 5fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "block-title block-title block-subtitle"
+            "block-nav block-nav block-nav"
+            "block-aside block-main block-main"
+            "block-footer block-footer block-footer"
+    }
+    
+    .main-content {
+        background-color: #0ff;
+        margin: 0 auto;
+        width: 75%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    body {
+        background-color: #ccc;
+    }
+    
+    .page-wrapper {
+        margin: 30px auto 60px;
+        max-width: 1080px; 
+    }
+}
