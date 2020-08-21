@@ -1,0 +1,78 @@
+/* 	Layout
+	Uses Grid and Flexbox   
+*/
+
+.page-wrapper {
+    margin: 15px; 
+    border: 3px solid $color-light-gray; 
+}
+
+.block-title,
+.block-subtitle,
+.block-nav,
+.block-main,
+.block-aside,
+.block-footer {
+    border: 3px solid $color-light-gray;
+    padding: 30px;
+}
+
+.block-title { 
+    grid-area: block-title;
+}
+
+.block-subtitle { 
+    grid-area: block-subtitle;
+}
+
+.block-nav { 
+    grid-area: block-nav;
+}
+
+.block-main { 
+    grid-area: block-main;
+}
+
+.block-aside { 
+    grid-area: block-aside;
+}
+
+.block-footer { 
+    grid-area: block-footer;
+}
+
+@media all and (min-width: 900px) {
+    .grid-header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "block-title block-subtitle"
+            "block-nav block-nav"
+    }
+
+    .flex-content {
+        display: flex;
+    }
+    
+    .block-aside {
+        order: 1;
+        flex-grow: 1;
+    }
+    .block-main {
+        order: 2;
+        flex-grow: 3;
+    }
+    
+    .main-content {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .page-wrapper {
+        margin: 30px auto 60px;
+        max-width: 1080px; 
+    }
+}

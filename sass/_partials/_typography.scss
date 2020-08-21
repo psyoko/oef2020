@@ -1,0 +1,36 @@
+/*	Typography
+*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $color-black; 
+
+}
+
+h1, h2, h3 {
+	font-family: $header-font-family;
+	font-weight: 900
+}
+
+h1 {
+	font-size: 3em; 
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h4, h5, h6 {
+	font-family: $header-font-family;
+	font-weight: 400; 
+}
+
+p, ol, ul, dl {
+	font-family: $body-font-family;
+	font-size: 1.125em; 
+	letter-spacing: .01em;
+	line-height: 1.25em;
+	margin-top: .25em;
+	margin-bottom: .25em;
+}

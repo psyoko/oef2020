@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: OEF 2020
 Author: Yoko Sakao Ohama
@@ -5,76 +6,206 @@ Description: Custom theme for Over Easy Foundation, using Tania Raschia’s tut
 Version: 0.0.1
 Tags: custom
 */
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*	_variables.scss 
+*/
+/* 	Layout
+	Uses Grid and Flexbox   
+*/
+/* line 5, sass/_partials/_layout.scss */
+.page-wrapper {
+  margin: 15px;
+  border: 3px solid #d8d8d8;
+}
+
+/* line 10, sass/_partials/_layout.scss */
 .block-title,
 .block-subtitle,
 .block-nav,
 .block-main,
 .block-aside,
 .block-footer {
-    border: 3px solid #d8d8d8;
-    padding: 30px;
+  border: 3px solid #d8d8d8;
+  padding: 30px;
 }
 
-.block-title { 
-    grid-area: block-title;
+/* line 20, sass/_partials/_layout.scss */
+.block-title {
+  grid-area: block-title;
 }
 
-.block-subtitle { 
-    grid-area: block-subtitle;
+/* line 24, sass/_partials/_layout.scss */
+.block-subtitle {
+  grid-area: block-subtitle;
 }
 
-.block-nav { 
-    grid-area: block-nav;
+/* line 28, sass/_partials/_layout.scss */
+.block-nav {
+  grid-area: block-nav;
 }
 
-.block-main { 
-    grid-area: block-main;
+/* line 32, sass/_partials/_layout.scss */
+.block-main {
+  grid-area: block-main;
 }
 
-.block-aside { 
-    grid-area: block-aside;
+/* line 36, sass/_partials/_layout.scss */
+.block-aside {
+  grid-area: block-aside;
 }
 
-.block-footer { 
-    grid-area: block-footer;
-}
-
-.page-wrapper {
-    margin: 30px; 
-    border: 3px solid #d8d8d8;
+/* line 40, sass/_partials/_layout.scss */
+.block-footer {
+  grid-area: block-footer;
 }
 
 @media all and (min-width: 900px) {
-    body {
-        background-color: #e8e8e8;
-    }
-    
-    .page-wrapper {
-        display: grid;
-        grid-template-columns: 3fr 5fr 4fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "block-title block-title block-subtitle"
-            "block-nav block-nav block-nav"
-            "block-aside block-main block-main"
-            "block-footer block-footer block-footer"
-    }
-    
-    .main-content {
-        background-color: #0ff;
-        margin: 0 auto;
-        width: 75%;
-    }
+  /* line 45, sass/_partials/_layout.scss */
+  .grid-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "block-title block-subtitle" "block-nav block-nav";
+  }
+
+  /* line 54, sass/_partials/_layout.scss */
+  .flex-content {
+    display: flex;
+  }
+
+  /* line 58, sass/_partials/_layout.scss */
+  .block-aside {
+    order: 1;
+    flex-grow: 1;
+  }
+
+  /* line 62, sass/_partials/_layout.scss */
+  .block-main {
+    order: 2;
+    flex-grow: 3;
+  }
+
+  /* line 67, sass/_partials/_layout.scss */
+  .main-content {
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+@media all and (min-width: 1200px) {
+  /* line 74, sass/_partials/_layout.scss */
+  .page-wrapper {
+    margin: 30px auto 60px;
+    max-width: 1080px;
+  }
+}
+/*	Typography
+*/
+/* line 4, sass/_partials/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222222;
 }
 
-@media all and (min-width: 1200px) {
-    body {
-        background-color: #ccc;
-    }
-    
-    .page-wrapper {
-        margin: 30px auto 60px;
-        max-width: 1080px; 
-    }
+/* line 11, sass/_partials/_typography.scss */
+h1, h2, h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+}
+
+/* line 16, sass/_partials/_typography.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 20, sass/_partials/_typography.scss */
+h2 {
+  font-size: 1.8em;
+}
+
+/* line 24, sass/_partials/_typography.scss */
+h4, h5, h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* line 29, sass/_partials/_typography.scss */
+p, ol, ul, dl {
+  font-family: "Neuton", serif;
+  font-size: 1.125em;
+  letter-spacing: .01em;
+  line-height: 1.25em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+/*	Some more CSS by meee
+*/
+/* line 19, sass/style.scss */
+* {
+  box-sizing: border-box;
 }

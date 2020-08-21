@@ -1,0 +1,21 @@
+/*
+Theme Name: OEF 2020
+Author: Yoko Sakao Ohama
+Description: Custom theme for Over Easy Foundation, using Tania Raschia’s tut
+Version: 0.0.1
+Tags: custom
+*/
+
+@import "compass";
+@import "compass/reset";
+
+@import "_partials/variables";
+@import "_partials/layout"; 
+@import "_partials/typography"; 
+
+/*	Some more CSS by meee
+*/
+
+* {
+	box-sizing: border-box;
+}
