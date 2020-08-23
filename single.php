@@ -15,19 +15,10 @@
             <dd><?php the_date(); ?></dd>
 
             <dt>Category</dt>
-            <dd><ul>
-                <?php 
-                foreach (get_categories() as $category) {
-                    echo "<li>";
-                    echo $category->name;
-                    echo "</li>";
-                } 
-                ?>
-            </ul></dd>
+            <dd><?php the_category(); ?></dd>
             
             <dt>Written by</dt>
-            <dd><?php the_author(); ?>
-            </dd>
+            <dd><?php the_author(); ?></dd>
         </dl>
     </aside>
 </div>
