@@ -18,14 +18,17 @@
 }
 
 .block-title { 
+    @include flex-vertical-center; 
     grid-area: block-title;
 }
 
 .block-subtitle { 
+    @include flex-vertical-center; 
     grid-area: block-subtitle;
 }
 
 .block-nav { 
+    @include flex-vertical-center; 
     grid-area: block-nav;
 }
 
@@ -38,10 +41,11 @@
 }
 
 .block-footer { 
+    @include flex-vertical-center; 
     grid-area: block-footer;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 640px) {
     .grid-header {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -51,22 +55,37 @@
             "block-nav block-nav"
     }
 
+}
+
+@media all and (min-width: 900px) {
     .flex-content {
         display: flex;
     }
     
     .block-aside {
         order: 1;
-        flex-grow: 1;
+        width: 25%; 
     }
     .block-main {
         order: 2;
-        flex-grow: 3;
+        flex-grow: 1;
     }
     
     .main-content {
         margin: 0 auto;
         width: 75%;
+    }
+
+    body.page {
+        h2 {
+            margin-left: 8.33%; 
+            width: 83.33%; 
+        }
+
+        main p {
+            margin-left: 33%; 
+            width: 58.33%; 
+        }
     }
 }
 
@@ -76,3 +95,6 @@
         max-width: 1080px; 
     }
 }
+
+/*  Page layout things (no sidebar)
+*/

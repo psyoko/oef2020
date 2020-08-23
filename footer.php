@@ -1,4 +1,3 @@
-            </div>
             <footer class="block-footer">
                 <p>
                     <?php echo comicpress_copyright(); /* https://www.wpbeginner.com/wp-tutorials/how-to-add-a-dynamic-copyright-date-in-wordpress-footer/ */ ?> <a href="https://kiwimonk.com/">Kevin Huynh</a> and <a href="https://yoko.cool/">Yoko Sakao Ohama</a>

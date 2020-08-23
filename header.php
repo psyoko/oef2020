@@ -23,7 +23,7 @@
     <?php wp_head();?>
     </head>
 
-    <body>
+    <body <?php body_class(); ?>>
         <div class="page-wrapper"> 
             <header class="grid-header">
                 <div class="block-title">
@@ -32,7 +32,7 @@
                     </h1>
                 </div>
                 <div class="block-subtitle">
-                    <p><small><?php echo get_bloginfo( 'description' ); ?></small></p>
+                    <p><?php echo get_bloginfo( 'description' ); ?></p>
                 </div>
                 <div class="block-nav">
                     <nav>
@@ -42,4 +42,3 @@
                     </nav>
                 </div>
             </header>
-            <div class="flex-content">

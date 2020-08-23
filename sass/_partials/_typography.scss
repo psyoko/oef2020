@@ -18,12 +18,22 @@ h1 {
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 3em;
 }
 
-h4, h5, h6 {
+h4, h5, h6, dt {
 	font-family: $header-font-family;
 	font-weight: 400; 
+}
+
+dt {
+	font-size: .75em; 
+}
+
+dd {
+	color: $color-gray;
+	font-family: $header-font-family;
+	font-weight: 900; 
 }
 
 p, ol, ul, dl {
@@ -33,4 +43,8 @@ p, ol, ul, dl {
 	line-height: 1.25em;
 	margin-top: .25em;
 	margin-bottom: .25em;
+}
+
+body main p {
+	font-size: 1.5em; 
 }
