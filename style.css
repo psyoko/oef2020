@@ -84,7 +84,7 @@ Tags: custom
   /* line 65, sass/_partials/_layout.scss */
   .block-aside {
     order: 1;
-    width: 25%;
+    min-width: 25%;
   }
 
   /* line 69, sass/_partials/_layout.scss */
