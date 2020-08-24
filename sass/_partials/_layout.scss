@@ -14,7 +14,7 @@
 .block-aside,
 .block-footer {
     border: 3px solid $color-light-gray;
-    padding: 30px;
+    padding: 24px;
 }
 
 .block-title { 
@@ -77,15 +77,16 @@
     }
 
     body.page {
+        main > * {
+            margin-left: 33%; 
+            width: 58.33%; 
+        }
+
         h2 {
             margin-left: 8.33%; 
             width: 83.33%; 
         }
 
-        main p {
-            margin-left: 33%; 
-            width: 58.33%; 
-        }
     }
 }
 
@@ -95,6 +96,3 @@
         max-width: 1080px; 
     }
 }
-
-/*  Page layout things (no sidebar)
-*/

@@ -12,7 +12,7 @@
 
         <!-- Custom styles for this template -->
         <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Neuton:ital@0;1&family=Work+Sans:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;900&display=swap" rel="stylesheet">
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

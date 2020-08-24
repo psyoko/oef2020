@@ -1,6 +1,8 @@
 /*	Typography
 */
 
+/*	Theme style happening here I guess */
+
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -9,7 +11,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: $header-font-family;
+	font-family: $sans-serif-font;
 	font-weight: 900
 }
 
@@ -17,34 +19,76 @@ h1 {
 	font-size: 3em; 
 }
 
-h2 {
-	font-size: 3em;
-}
-
-h4, h5, h6, dt {
-	font-family: $header-font-family;
+h4, h5, h6 {
+	font-family: $sans-serif-font;
 	font-weight: 400; 
 }
 
+p {
+	color: $color-gray; 
+	font-family: $sans-serif-font;
+	font-size: 1em; 
+	letter-spacing: .01em;
+	line-height: 1.25em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+nav {
+	color: $color-black; 
+	font-family: $sans-serif-font;
+	font-weight: 400;
+}
+
 dt {
-	font-size: .75em; 
+	color: $color-gray;
+	font-family: $sans-serif-font;
+	margin-bottom: .5em; 
 }
 
 dd {
-	color: $color-gray;
-	font-family: $header-font-family;
-	font-weight: 900; 
+	color: $color-black;
+	font-family: $sans-serif-font;
+	margin-bottom: 2em; 
 }
 
-p, ol, ul, dl {
-	font-family: $body-font-family;
-	font-size: 1.125em; 
-	letter-spacing: .01em;
-	line-height: 1.25em;
-	margin-top: .25em;
-	margin-bottom: .25em;
+/*	Content styles happening in here */
+
+body main {
+	h2 {
+		color: $color-black; 
+		font-size: 2.4em;
+		margin: 1em 0; 
+	}
+
+	h3 {
+		color: $color-gray;
+		font-size: 1.5em;
+		margin: .75em 0; 
+	}
+
+	p, ol, ul {
+		font-family: $serif-font;
+		font-size: 1.5em; 
+		letter-spacing: .01em;
+		line-height: 1.25em;
+		margin: 0 0 1em;
+	}
+
+	ol, ul {
+		margin-left: 1em; 
+	}
+
+	li {
+		margin-bottom: .5em;
+	}
 }
 
-body main p {
-	font-size: 1.5em; 
+@media all and (min-width: 900px) {
+	dl {
+		margin-top: 3em; 
+	}
+}
+
+@media all and (min-width: 1200px) {
 }
