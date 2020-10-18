@@ -38,8 +38,8 @@
                     <nav>
                         <ul>
                             <li>
-                                <?php $aboutPage = get_page_by_path( 'about' ); ?>
-                                <a href="<?php echo get_the_permalink( $aboutPage ); ?>"><?php echo get_the_title( $aboutPage );?></a>
+                                <?php $aboutPage = get_page_by_path( 'about-us-pillars' ); ?>
+                                <a href="<?php echo get_the_permalink( $aboutPage ); ?>"><?php echo get_the_title( $aboutPage ); ?></a>
                             </li>
                             <li>
                                 <?php 
