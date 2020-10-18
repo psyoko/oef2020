@@ -140,36 +140,40 @@ h1 {
 
 /* line 22, sass/_partials/_typography.scss */
 h4, h5, h6 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Neuton", serif;
+  font-weight: 700;
 }
 
 /* line 27, sass/_partials/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 31, sass/_partials/_typography.scss */
 p {
   color: #585858;
   font-family: "Work Sans", sans-serif;
   font-size: 1em;
-  letter-spacing: .01em;
   line-height: 1.25em;
   margin-top: 0em;
   margin-bottom: 0em;
 }
 
-/* line 37, sass/_partials/_typography.scss */
+/* line 40, sass/_partials/_typography.scss */
 nav {
   color: #222222;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 
-/* line 43, sass/_partials/_typography.scss */
+/* line 46, sass/_partials/_typography.scss */
 dt {
   color: #585858;
   font-family: "Work Sans", sans-serif;
   margin-bottom: .5em;
 }
 
-/* line 49, sass/_partials/_typography.scss */
+/* line 52, sass/_partials/_typography.scss */
 dd {
   color: #222222;
   font-family: "Work Sans", sans-serif;
@@ -177,37 +181,36 @@ dd {
 }
 
 /*	Content styles happening in here */
-/* line 58, sass/_partials/_typography.scss */
+/* line 61, sass/_partials/_typography.scss */
 body main h2 {
   color: #222222;
   font-size: 2.4em;
   margin: 1em 0;
 }
-/* line 64, sass/_partials/_typography.scss */
+/* line 67, sass/_partials/_typography.scss */
 body main h3 {
   color: #585858;
   font-size: 1.5em;
   margin: .75em 0;
 }
-/* line 70, sass/_partials/_typography.scss */
+/* line 73, sass/_partials/_typography.scss */
 body main p, body main ol, body main ul {
   font-family: "Neuton", serif;
   font-size: 1.5em;
-  letter-spacing: .01em;
   line-height: 1.25em;
   margin: 0 0 1em;
 }
-/* line 78, sass/_partials/_typography.scss */
+/* line 80, sass/_partials/_typography.scss */
 body main ol, body main ul {
   margin-left: 1em;
 }
-/* line 82, sass/_partials/_typography.scss */
+/* line 84, sass/_partials/_typography.scss */
 body main li {
   margin-bottom: .5em;
 }
 
 @media all and (min-width: 900px) {
-  /* line 88, sass/_partials/_typography.scss */
+  /* line 90, sass/_partials/_typography.scss */
   dl {
     margin-top: 3em;
   }
