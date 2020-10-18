@@ -37,7 +37,17 @@
                 <div class="block-nav">
                     <nav>
                         <ul>
-                        <?php wp_list_pages('&title_li='); ?>
+                            <li>
+                                <?php $aboutPage = get_page_by_path( 'about' ); ?>
+                                <a href="<?php echo get_the_permalink( $aboutPage ); ?>"><?php echo get_the_title( $aboutPage );?></a>
+                            </li>
+                            <li>
+                                <?php 
+                                $reflectionsCat = get_category_by_slug( 'quarterly-reflections' );
+                                $reflectionsCatURL = get_category_link( get_cat_ID( 'Quarterly reflections' )); 
+                                ?>
+                                <a href="<?php echo $reflectionsCatURL; ?>"><?php echo $reflectionsCat->name; ?></a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
