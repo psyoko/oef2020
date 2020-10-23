@@ -58,6 +58,9 @@
                                 ?>
                                 <a href="<?php echo $reflectionsCatURL; ?>"><?php echo $reflectionsCat->name; ?></a>
                             </li>
+                            <li>
+                                <a href="https://overeasyfoundation.substack.com/" rel="external">Newsletter ↗</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
